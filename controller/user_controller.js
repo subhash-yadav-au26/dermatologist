@@ -124,7 +124,7 @@ exports.loginUser = async (req, res) => {
 
         //refresh token  secret
         const ref_secret = process.env.REF_SECRET
-        const refoptions = { expiresIn: process.env.refresh_expire }
+        const refoptions = { expiresIn: process.env.REFRESH_EXPIRE }
         // refresh token genreate
         const newrefreshToken = jwt.sign(payload, ref_secret, refoptions)
 
