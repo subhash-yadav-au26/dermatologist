@@ -31,7 +31,7 @@ router.post('/signup',registerUser)
 router.post('/login',loginUser)
 
 //dashboard page
-router.get('/dashboard',auth,dashboard)
+router.get('/dashboard',dashboard)
 
 //logout 
 router.get('/logout',logout)
