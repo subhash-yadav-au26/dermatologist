@@ -235,7 +235,7 @@ exports.findUser = async (req, res) => {
 
 //website dashboard
 exports.dashboard = async (req, res) => {
-    if (req.user) {
+    // if (req.user) {
         const user = await User.findById(req.user.id)
         const commentlist = await Comment.find()
         const doctorlist = await Doctor.find()
@@ -248,9 +248,9 @@ exports.dashboard = async (req, res) => {
             name:user.username
         })
 
-    } else {
-        res.json('user not login')
-    }
+    // } else {
+    //     res.json('user not login')
+    // }
 }
 
 exports.getabout = async(req,res)=>{
