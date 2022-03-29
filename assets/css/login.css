@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Roboto:wght@500&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    color: black;;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(/img/DermaLogin.jpg);
+}
+:root{
+    --top: calc(100vh-75vh);
+    --bottom: calc(100vh-75vh);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+.header{
+    background-color: #EFEFEF;
+}
+
+.header a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+.header a:hover{
+    background-color: lightseagreen;
+    color: white;
+}
+
+.wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    border: 2px solid rgb(255,255,255,0.5);
+    opacity: 0.8;
+}
+
+.form-container{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    background-color: rgb(255,255,255,0.5);
+    border: 2px solid rgb(255,255,255,0);
+    border-radius: 10px;
+    margin: 25px;
+    box-shadow: 1px 1px 20px #980F5A;
+}
+
+.form-container h1{
+    margin: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.il-wrapper{
+    width:300px;
+    margin: 0 auto;
+}
+
+.il-wrapper input, .button{
+    width: 280px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.button{
+    border: none;
+    color: white;
+    background-color: #980F5A;
+}
+
+.forget a{
+    text-decoration: none;
+    color: #151515;
+    
+}
+.link{
+    padding-left: 80px;
+}

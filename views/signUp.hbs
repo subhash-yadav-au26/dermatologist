@@ -1,0 +1,27 @@
+{{>loginhead}}
+{{#if msg}}
+<div class="alert alert-warning" role="alert">
+    {{msg}}
+</div>
+{{/if}}
+<div class="wrapper" style="display: flex;
+justify-content: center;">
+    <div class="form-container">
+        <h1>Sign Up</h1>
+        <form action="/user/signup" method="post">
+            <div class="il-wrapper">
+                <input type="text" id="email" class="input" name="username" placeholder="username" required  autocomplete="off">
+
+                <input type="email" id="email" class="input" name="email" placeholder="username111@gmail.com" required  autocomplete="off">
+
+                <input type="password" id="password" class="input" name="password" placeholder="Enter Password"
+                    required  autocomplete="off">
+                <button class="button" type="submit">Sign up</button>
+            </div>
+            <div class="forget">
+                <a href="#">Forget Password</a>
+                <a href="/user/login" class="link">Login</a>
+            </div>
+        </form>
+    </div>
+</div>

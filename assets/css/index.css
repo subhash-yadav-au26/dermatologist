@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Roboto:wght@500&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    color: black;;
+}
+
+body{
+    background-color: #EFEFEF;
+}
+
+:root{
+    --top: calc(100vh-75vh);
+    --bottom: calc(100vh-75vh);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+.header{
+    background-color: #EFEFEF;
+}
+
+.header a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+.header a:hover{
+    background-color: lightseagreen;
+    color: white;
+}
+
+.image img{
+    width: 100%;
+}
+
+.para{
+    width: 80%;
+    margin: 0 auto;
+    padding:70px 0;
+}
+
+.para p, ul > li{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.para p{
+    margin: 30px 0;
+}
+
+.lists{
+    display: flex;
+    width: fit-content;
+    max-height: 120px;
+}
+
+.lists ul{
+    width: 200px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #A3E4DB;
+    padding: 30px;
+}
+
+.cols ul{
+    list-style: none;
+    line-height: 50px;
+    padding: 0;
+}
+
+.cols ul li a{
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+}

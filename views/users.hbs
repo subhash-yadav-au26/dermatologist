@@ -1,0 +1,47 @@
+<div class="row m-t-30">
+    <div class="col-md-12">
+        <!-- DATA TABLE-->
+        <div class="table-responsive m-b-40">
+            <table class="table table-borderless table-data3">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>City</th>
+                        <th>Message</th>
+                        <th>Booked By</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#if bookedData}}
+                    {{#each bookedData}}
+                    <tr>
+                        <td>{{name}}</td>
+                        <td>{{this.name}}</td>
+                        <td>{{this.email}}</td>
+                        <td class="process">{{this.phone}}</td>
+                        <td>{{this.city}}</td>
+                        <td>{{this.message}}</td>
+                        <td>{{this.bookedBy}}</td>
+                    </tr>
+                    {{/ each}}
+                    {{else}}
+                      <tr>
+                        <td>no booking</td>
+                        <td>no booking</td>
+                        <td>no booking</td>
+                        <td class="process">no booking</td>
+                        <td>no booking</td>
+                        <td>no booking</td>
+                        <td>no booking</td>
+                    </tr>
+                    {{/if}}
+
+                </tbody>
+            </table>
+        </div>
+        <!-- END DATA TABLE-->
+    </div>
+</div>
