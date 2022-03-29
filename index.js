@@ -2,7 +2,7 @@ const express = require('express');
 const helmet = require("helmet");
 const app = express();
 require('dotenv').config()
-
+const PORT = process.env.PORT ||3000
 // mongoose connection
 const {mongoDB} = require('./config/databased')
 mongoDB()
@@ -47,6 +47,6 @@ app.get('*',(req,res)=>{
 })
 
 
-app.listen(process.env.PORT,()=>{
-    console.log(`server is running ${process.env.PORT}`)
+app.listen(PORT,()=>{
+    console.log(`server is running ${PORT}`)
 })
