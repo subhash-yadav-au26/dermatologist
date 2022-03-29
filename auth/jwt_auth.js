@@ -27,8 +27,8 @@ const auth = (req,res,next)=>{
             }
         }
         else{
-            return res.redirect('/user/login')
-            // return res.send('you are not authenticated!').status(401)
+            // return res.redirect('/user/login')
+            return res.send('you are not authenticated!').status(401)
         }
         
     } catch (error) {
